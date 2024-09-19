@@ -1,0 +1,154 @@
+/* email spam checker*/
+.email-checker
+{
+position: absolute;
+left: -9999px;
+}
+
+/*email checker end*/
+
+
+       /* Calendar CSS START */
+
+        .calendar-full-wrapper {
+            display: none;
+        }
+
+        .calendar-img {
+			cursor: pointer;
+			width: 22px;
+			position: absolute;
+			right: 185px;
+			top: 50px;
+			-webkit-filter: grayscale(1) invert(1);
+			filter: grayscale(1) invert(1);
+            display: none;
+		}
+
+        .calendar-triangle {
+			width: 0px;
+			height: 0px;
+			border-left: 20px solid transparent;
+			border-right: 20px solid transparent;
+			border-bottom: 20px solid #dcedf9;
+			position: absolute;
+			top: 90px;
+			right: 175px;
+			z-index: 2;
+			/* content: ''; */
+			overflow: visible;
+		}
+
+        .calendar-box {
+			background: #e8f2f8;
+			position: absolute;
+			right: 145px;
+			top: 110px;
+			width: 475px;
+			height: 450px;
+			overflow-y: scroll;
+		}
+
+        .calendar-wrap {
+			padding: 14px 24px;
+			position: relative;
+		}
+
+        .calendar-wrap:not(:last-child) {
+            border-bottom: 1px solid #b7d8ef;
+        }
+
+        .calendar-heading {
+            font-weight: 700;
+            margin: 0 0 5px;
+            color: #f16c51;
+            font-size: 14px;
+        }
+
+        .calendar-para label {
+            font-weight: 700 !important;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .calendar-link {
+            font-size: 13px !important;
+            font-weight: 500;
+            color: #000 !important;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .calendar-link:hover,
+        .calendar-link:focus {
+            color: #27404e !important;
+        }
+
+        .calendar-para ul {
+            margin: 0;
+            padding-left: 20px;
+
+        }
+
+        .calendar-para ul li {
+            margin-bottom: 15px;
+            line-height: 0.9;
+			color: #000000;
+        }
+
+        .calendar-para span {
+            display: block;
+            font-weight: 700;
+            margin: 0 0 5px;
+            font-size: 13px;
+			color: #000000;
+        }
+
+        .moreText {
+            display: none;
+        }
+
+        .textButton {
+            position: absolute;
+            right: 15px;
+            border: 0;
+            background-color: transparent;
+            padding: 0;
+            cursor: pointer;
+            font-family: 'myriad-pro', 'Arial';
+            font-size: 11px;
+            bottom: 8px;
+            text-transform: uppercase;
+            font-weight: 600;
+			color: #000000;
+        }
+
+        @media screen and (max-width:767px) {
+            .calendar-box {
+                position: fixed;
+                right: 0;
+                height: 100%;
+                top: 0;
+                width: 100%;
+                overflow-y: scroll;
+                z-index: 9;
+            }
+
+            .calendar-close {
+                position: absolute;
+                right: 15px;
+                font-size: 30px;
+                top: 0;
+                color: #007cc3;
+                border: 0;
+                background: none;
+				z-index: 9;
+            }
+			.calendar-img {
+				right: 150px;
+			}
+
+        }
+
+        /* Calendar CSS END */
+
